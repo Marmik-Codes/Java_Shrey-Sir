@@ -1,0 +1,98 @@
+-> Problem Scenario
+
+Consider a two-dimensional array, 'data', representing a grid where each element holds a positive integer. This grid is a 10x10 matrix populated with random values between 1 and 100. This matrix represents an imaginary "city grid" where each cell's value corresponds to the population in that part of the city.
+
+In addition, a one-dimensional array, 'thresholds', with 10 elements represents various population thresholds that the city government has set for analysis.
+
+-> Initial Data Arrays
+
+1. 2D Array 'data[10][10]':
+   - Example: Each element is an integer between 1 and 100.
+   - Sample (you can fill it with any 10x10 matrix of values between 1 and 100):
+     data = [
+       [23, 45, 67, 12, 89, 24, 56, 78, 45, 32],
+       [12, 34, 56, 78, 90, 45, 23, 67, 89, 21],
+       [56, 78, 45, 23, 12, 89, 90, 45, 34, 56],
+       [23, 67, 89, 21, 12, 34, 56, 78, 90, 12],
+       [89, 45, 23, 67, 12, 78, 34, 56, 90, 21],
+       [12, 56, 78, 90, 45, 23, 67, 89, 21, 12],
+       [34, 78, 90, 45, 23, 12, 89, 45, 67, 89],
+       [56, 45, 23, 89, 90, 21, 12, 78, 34, 56],
+       [12, 89, 45, 67, 90, 78, 34, 23, 56, 12],
+       [78, 56, 90, 34, 12, 89, 45, 67, 23, 45]
+     ]
+
+2. 1D Array 'thresholds[10]':
+   - Example: Integer values representing different population thresholds.
+   - Sample:
+     thresholds = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+
+
+-> Problem Statements
+
+Using only arrays ('data' and 'thresholds') and variables, solve the following problems:
+
+1. Sum of All Populations:
+   - Calculate and print the sum of all population values in the 'data' grid.
+
+2. Average Population of the City:
+   - Find and print the average population value across all grid cells in 'data'.
+
+3. Highest and Lowest Populations in the Grid:
+   - Identify and print the highest and lowest population values within 'data'.
+   - Also, specify their locations (row and column indices).
+
+4. Total Population in Each Row:
+   - For each row in 'data', calculate the sum of the population values and store these sums in a new 1D array, 'row_totals'.
+   - Print 'row_totals'.
+
+5. Total Population in Each Column:
+   - For each column in 'data', calculate the sum of the population values and store these sums in a new 1D array, 'column_totals'.
+   - Print 'column_totals'.
+
+6. Above-Threshold Population Cells:
+   - Using the 'thresholds' array, identify cells in 'data' where the population exceeds each of the threshold values in 'thresholds'.
+   - For each threshold, print the coordinates of cells in 'data' that exceed that threshold.
+
+7. Population Heatmap:
+   - Create a new 2D array, 'heatmap', the same size as 'data', where each cell value is either:
+     - 1 if the population in that cell is above 50,
+     - 0 if the population is 50 or below.
+   - Print 'heatmap'.
+
+8. Most Populated Row and Column:
+   - Determine the row and column in 'data' with the highest total population.
+   - Print the index of this row and column along with their respective total populations.
+
+9. Diagonal Population Sums:
+   - Calculate and print the sum of the main diagonal and the anti-diagonal in 'data'.
+
+10. Population Density Grading:
+    - Create a new 2D array, 'density_grade', with the same dimensions as 'data', where each cell contains:
+      - "A" if the population is above 80,
+      - "B" if the population is between 50 and 80,
+      - "C" if the population is between 20 and 50,
+      - "D" if the population is below 20.
+    - Print the 'density_grade' array.
+
+11. Isolated Cells:
+    - Identify "isolated" cells, where the population value in 'data' is lower than all directly adjacent cells (up, down, left, right).
+    - Print the coordinates of any such isolated cells.
+
+12. Row and Column with Even Populations:
+    - Create two new 1D arrays, 'even_row_count' and 'even_column_count', where each element represents the count of even-numbered populations in each respective row and column.
+    - Print 'even_row_count' and 'even_column_count'.
+
+13. Total Population by Threshold Range:
+    - For each threshold in 'thresholds', calculate the total population of cells in 'data' that fall between two consecutive thresholds (e.g., between 10 and 20, 20 and 30, etc.).
+    - Print the resulting total populations for each range.
+
+14. Transpose of Population Grid:
+    - Create and print the transpose of the 'data' array, where rows and columns are swapped.
+
+15. Boundary Population Total:
+    - Calculate and print the total population of the cells located on the boundary (edges) of 'data'.
+
+16. Population Difference between Halves:
+    - Split 'data' into two halves: the upper half (first 5 rows) and the lower half (last 5 rows).
+    - Calculate and print the total population in each half and the difference between them.

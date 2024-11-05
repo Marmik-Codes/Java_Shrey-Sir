@@ -8,15 +8,14 @@ public class PalindromeNo {
         int num = sc.nextInt();
 
         int rev = 0;
-        int rem = 0;
         int temp = num;
         while (num > 0) {
-            rem = num % 10;
-            rev = rev*10+rem;
-           num/=10; 
+            rev *= 10;
+            rev = rev +(num%10);
+            num/=10; 
         }
         
-        if (temp == num) {
+        if (temp == rev) {
             System.out.printf("%d is palindrome number",temp);
         }else{
             System.out.printf("%d is not palindrome number",temp);

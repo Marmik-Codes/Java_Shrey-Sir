@@ -25,6 +25,7 @@ class Book{
         System.out.println("Publication Year: "+ publicationYear);
         System.out.println("Availability: " + (isAvailable ? "Available" : "Not Available"));        
         System.out.println("Shelf Location: "+ shelfLocation);
+        
     }
     
 }

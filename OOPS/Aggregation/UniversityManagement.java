@@ -1,5 +1,4 @@
 
-
 class Faculty{
     String name;
     String designation;
@@ -45,7 +44,7 @@ class Department{
             if (facultyarr[i].employee_id == employeeid) {
                 found = true;
                 System.out.println("Faculty of Employee ID " + employeeid + " has been removed successfully from department " + department_name + "department");
-                for (int j = i; j < faccnt -1; j++) {
+                for (int j = i; j < faccnt-1; j++) {
                     facultyarr[j] = facultyarr[j+1];
                 }
                 facultyarr[faccnt -1] = null;
@@ -69,19 +68,22 @@ class Department{
             }
         }
     }
+    
 }
 
 
 public class UniversityManagement {
     public static void main(String[] args) {
         Department department = new Department("Computer Science", 5);
+        Department department2 = new Department("EC", 2);
 
         Faculty faculty1 = new Faculty("Shrey Sir", "Asst. Professor", "2365");
         Faculty faculty2 = new Faculty("Zafar Sir", "Asst. Professor", "2265");
-
+        Faculty faculty1ec = new Faculty("Sinde", "Asst. Prof", "2224");
 
         department.add_faculty(faculty1);
         department.add_faculty(faculty2);
+        department2.add_faculty(faculty1ec);
 
         department.listFaculty();
     }    

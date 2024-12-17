@@ -1,6 +1,6 @@
 // 1. Problem Statement 1: Create a base class called `Animal` with a method `makeSound()`. Implement subclasses `Dog` and `Cat` that override this method to provide specific sounds for each animal (e.g., "Bark" for Dog and "Meow" for Cat). Write a program to demonstrate polymorphism by calling the `makeSound()` method on an array of `Animal` references.
 
-import javafx.animation.AnimationTimer;
+
 
 class Animal{
     public void makeSound(){

@@ -21,6 +21,7 @@ class cat extends Animal{
     void eat(){
         System.out.println(name + " is Eating Fish." );
     }
+    @Override
     void sound(){
         System.out.println(name + " is Meowing.");
     }

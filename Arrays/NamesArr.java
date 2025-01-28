@@ -17,5 +17,6 @@ public class NamesArr {
         for (int i = 0; i < name.length; i++) {
             System.out.println("Name " + (i+1) + name[i]);
         }
-    }    
+        sc.close(); 
+    }   
 }

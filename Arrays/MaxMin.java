@@ -26,5 +26,7 @@ public class MaxMin {
         }
         System.out.printf("Largest Element: %d" , max);
         System.out.printf("\nSmallest Element: %d" , min);
+
+        sc.close();
     }    
 }

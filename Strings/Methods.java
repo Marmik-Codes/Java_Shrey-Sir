@@ -11,5 +11,7 @@ public class Methods {
         // String str = "Samosa";
         // System.out.println(str.length());
         // System.out.println(str.toUpperCase());
+
+        sc.close();
     }
 }

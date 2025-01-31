@@ -67,9 +67,9 @@ public class BankSystem {
             acc.withdraw(2500);
             System.out.println("Updated balance after withdrawal: $" + acc.getBalance());
 
-            acc.withdraw(-3000);
+            acc.withdraw(300000);
 
-        } catch (Exception  e) {
+        } catch (InsufficientBalanceException   | InvalidTransactionException e) {
             System.out.println("Transaction failed: " + e.getMessage());
         }
         finally{

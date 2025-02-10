@@ -10,6 +10,7 @@ public class Table {
             } catch (InterruptedException e) {
                 System.out.println(e.getMessage());
             }
+
         }
     }
      void printTable(int n){
@@ -18,6 +19,7 @@ public class Table {
                  System.out.println(n + " * " + i + " = " + n * i);
                  try {
                      Thread.sleep(100);
+
                  } catch (InterruptedException e) {
                      System.out.println(e.getMessage());
                  }
